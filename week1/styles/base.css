@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+header {
+    background-color: #26527c;
+    color: #ffffff;
+    text-align: center;
+}
+
+header h1 {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+header nav {
+    background-color: #333333;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header nav ul li {
+    flex: 1;
+}
+
+header nav ul li a {
+    display: block;
+    color: #ffffff;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+header nav ul li a:hover {
+    background-color: #444444;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #222222;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #b5b5b5;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: #26527c;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.6rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.card-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.card-content p {
+    flex: 1;
+    font-size: 0.95rem;
+    color: #333333;
+}
+
+.profile {
+    width: 140px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.location-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.05rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.divider {
+    width: 80%;
+    margin: 0 auto 1.5rem auto;
+    border: 0;
+    border-top: 1px solid #cccccc;
+}
+
+.cerro {
+    width: 140px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+figcaption {
+    font-size: 0.75rem;
+    font-style: italic;
+    color: #555555;
+    text-align: center;
+    margin-top: 0.3rem;
+}
+
+.resource-list {
+    list-style-type: disc;
+    padding: 2rem 1.5rem 2rem 3.5rem;
+    margin: 0;
+}
+
+.resource-list li {
+    margin-bottom: 0.6rem;
+}
+
+.resource-list a {
+    color: #2b3bbd;
+    text-decoration: underline;
+    font-size: 0.95rem;
+}
+
+.resource-list a:hover {
+    color: #101d70;
+}
+
+footer {
+    background-color: #26527c;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+footer #lastModified {
+    color: #ffff66;
+    font-size: 0.85rem;
+}
