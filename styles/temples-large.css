@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        position: static;
+        width: auto;
+        background-color: transparent;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    nav ul li a {
+        padding: 0.5rem 1rem;
+        border: none;
+    }
+
+    nav ul li a:hover {
+        background-color: #2c4d75;
+        border-radius: 4px;
+    }
+
+    .temples-pictures {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
