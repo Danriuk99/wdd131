@@ -1,15 +1,18 @@
 document.getElementById("currentyear").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
+document.getElementById("lastModified").textContent = document.lastModified;
 
-const temp = 8;
-const speed = 10;
+const tempC = 8;
+const windKmh = 10;
 
-const calculateWindChill = (t, v) => (13.12 + 0.6215 * t - 11.37 * Math.pow(v, 0.16) + 0.3965 * t * Math.pow(v, 0.16)).toFixed(1);
+function calculateWindChill(temp, wind) {
+    return 13.12 + (0.6215 * temp) - (11.37 * Math.pow(wind, 0.16)) + (0.3965 * temp * Math.pow(wind, 0.16));
+}
 
-const chillSpan = document.getElementById("chill");
+const chillElement = document.getElementById("chill");
 
-if (temp <= 10 && speed > 4.8) {
-    chillSpan.textContent = `${calculateWindChill(temp, speed)} °C`;
+if (tempC <= 10 && windKmh > 4.8) {
+    const chillValue = calculateWindChill(tempC, windKmh);
+    chillElement.textContent = `${chillValue.toFixed(1)} °C`;
 } else {
-    chillSpan.textContent = "N/A";
+    chillElement.textContent = "N/A";
 }
