@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan | Print Up</title>
+    <meta name="author" content="David Martinez Sanchez">
+    <meta name="description" content="Site plan for the Print Up web project.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+    <header>
+        <h1>Site Plan: Print Up</h1>
+        <h2>David Martinez Sanchez | WDD 131</h2>
+    </header>
+
+    <main>
+        <section>
+            <h3>1. Site Name</h3>
+            <p><strong>Print Up:</strong> I chose this name because it combines the vibe of growth ("up") with what we do, which is printing and customizing cool items right here in Monterrey.</p>
+        </section>
+
+        <section>
+            <h3>2. Site Purpose</h3>
+            <p>The website will serve as an online catalog and a direct contact channel for the printing business. The idea is for users to see what products we handle (custom t-shirts, mugs, caps, and banners), check past work, and request quotes quickly.</p>
+        </section>
+
+        <section>
+            <h3>3. Scenarios</h3>
+            <ul>
+                <li>How can I check the prices and available materials if I want to get custom t-shirts made for an event?</li>
+                <li>Where exactly is the shop located in Monterrey and how long does it take to deliver a rush order?</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>4. Color Scheme</h3>
+            <p>These are the brand colors derived from our logo that we will use across the entire site:</p>
+            <ul>
+                <li><strong>Deep Navy Blue (#1b365d):</strong> The primary color for the header, footer, and main headings. It gives a professional and solid look.</li>
+                <li><strong>Vibrant Green (#8cc63f):</strong> The accent color used to highlight key elements, buttons, and badges, matching our octopus mascot.</li>
+                <li><strong>Accent Purple (#6b3fa0):</strong> A creative secondary tone used to add contrast, accents, and visual interest to the layout.</li>
+                <li><strong>Soft Background (#f4f4f9):</strong> The general background color of the page to ensure comfortable reading.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>5. Typography</h3>
+            <ul>
+                <li><strong>Montserrat:</strong> Used for all headings and titles (<code>h1</code>, <code>h2</code>, <code>h3</code>) to keep it looking modern and organized.</li>
+                <li><strong>Roboto:</strong> Used for regular paragraphs and lists to ensure high readability on any mobile device or computer.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>6. Wireframes</h3>
+            <p>This is how we plan to lay out the main page:</p>
+            <ul>
+                <li><strong>Mobile View:</strong> A vertical single-column layout, featuring a collapsible hamburger menu and stacked content sections.</li>
+                <li><strong>Desktop View:</strong> A three-column grid structure to display products neatly, accompanied by a fixed top navigation bar.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | David Martinez Sanchez | Mexico</p>
+    </footer>
+
+    <script>
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
