@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <meta name="author" content="David Martinez Sanchez">
+    <meta name="description" content="Confirmation page for submitted product review.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/review.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main class="review-main">
+        <section class="review-card">
+            <h2>Thank you for your review!</h2>
+            <p>Your feedback has been successfully submitted and recorded.</p>
+            <p class="counter-text">Total reviews completed: <span id="reviewCount">0</span></p>
+            <a href="form.html" class="btn-submit">Submit Another Review</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | David Martinez Sanchez | Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

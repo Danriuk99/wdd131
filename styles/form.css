@@ -1,0 +1,150 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #1b365d;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.2rem;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+fieldset {
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #1b365d;
+    padding: 0 0.5rem;
+}
+
+.form-item {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+
+.required {
+    color: #cc0000;
+}
+
+.optional, .note {
+    font-size: 0.85rem;
+    color: #666666;
+    font-weight: 400;
+}
+
+select, input[type="date"], input[type="text"], textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+select:focus, input:focus, textarea:focus {
+    outline: none;
+    border-color: #6b3fa0;
+    box-shadow: 0 0 4px rgba(107, 63, 160, 0.25);
+}
+
+.rating-group {
+    display: flex;
+    gap: 1.2rem;
+    font-size: 1.2rem;
+    margin-top: 0.4rem;
+}
+
+.rating-group label, .checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.4rem;
+}
+
+input[type="submit"], .btn-submit {
+    display: block;
+    width: 100%;
+    background-color: #6b3fa0;
+    color: #ffffff;
+    border: none;
+    padding: 0.85rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: background-color 0.2s;
+}
+
+input[type="submit"]:hover, .btn-submit:hover {
+    background-color: #553180;
+}
+
+.review-main {
+    max-width: 550px;
+}
+
+.review-card {
+    background: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.counter-text {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1b365d;
+    margin: 1.5rem 0;
+}
+
+footer p {
+    margin: 0.25rem 0;
+    font-size: 0.85rem;
+}
