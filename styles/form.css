@@ -148,3 +148,10 @@ footer p {
     margin: 0.25rem 0;
     font-size: 0.85rem;
 }
+
+/* Media Query para cumplir con la validación de CSS y adaptar en pantallas grandes */
+@media (min-width: 768px) {
+    main {
+        max-width: 650px;
+    }
+}
